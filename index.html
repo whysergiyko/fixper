@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header__relative">
+        <header class="header">
+          <div class="header__container">
+            <button class="header__burger"><span></span></button>
+            <a href="" class="header__logo" data-da=".header__bot,1000.99, first">
+              <img src="img/icons/logo.svg" alt="" />
+            </a>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="" class="menu__link">Диагностика</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Стоимость</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Мастера</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Вопросы</a></li>
+              </ul>
+            </nav>
+            <p class="header__city">Москва</p>
+            <button class="header__contact" data-da=".header__bot,1000.99, last">Позвонить</button>
+          </div>
+          <div class="header__bot"></div>
+        </header>
+      </div>
+
+      <main class="page">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__info">
+              <h1 class="hero__title">Ремонт стиральных машин на дому c годовой гарантией</h1>
+              <div class="hero__text">
+                <p>
+                  <span>Отремонтируем на дому</span> или бесплатно завезем и доставим обратно из
+                  сервисного центра
+                </p>
+              </div>
+              <a href="" class="hero__link" data-da=".hero__container,1000.99,last"
+                >Заказать звонок</a
+              >
+            </div>
+            <div class="hero__decor">
+              <picture>
+                <source media="(max-width:600.99px)" srcset="img/hero/decor-xs.png" />
+                <source media="(max-width:1000.99px)" srcset="img/hero/decor-s.png" />
+                <img src="img/hero/decor.png" alt="" />
+              </picture>
+            </div>
+            <div class="hero__man">
+              <img src="img/hero/repairman.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="advantages__container">
+            <div class="advantages__item">
+              <div class="advantages__inner">
+                <div class="advantages__img"><img src="img/advantages/1.svg" alt="" /></div>
+                <h2 class="advantages__title">Фирменные запчасти у мастеров в наличии</h2>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__inner">
+                <div class="advantages__img"><img src="img/advantages/2.svg" alt="" /></div>
+                <h2 class="advantages__title">Большинство ремонтов делаем за час на дому</h2>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__inner">
+                <div class="advantages__img"><img src="img/advantages/3.svg" alt="" /></div>
+                <h2 class="advantages__title">Профессиональный инструмент под любую задачу</h2>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__inner">
+                <div class="advantages__img"><img src="img/advantages/4.svg" alt="" /></div>
+                <h2 class="advantages__title">Квалифицированные и опытные мастера</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="problem">
+          <div class="problem__container">
+            <div class="problem__left">
+              <h4 class="problem__subtitle">Онлайн-диагностика</h4>
+              <h2 class="problem__title">Какая у вас проблема?</h2>
+              <ul class="problem__list">
+                <li class="problem__item"><a href="" class="problem__link">Не включается</a></li>
+                <li class="problem__item"><a href="" class="problem__link">Не выключается</a></li>
+                <li class="problem__item">
+                  <a href="" class="problem__link">Не нагревает воду</a>
+                </li>
+                <li class="problem__item">
+                  <a href="" class="problem__link"
+                    >Все работет, но мне скучно и я хочу пообщаться с мастером</a
+                  >
+                </li>
+                <li class="problem__item">
+                  <a href="" class="problem__link">Не крутится барабан</a>
+                </li>
+                <li class="problem__item">
+                  <a href="" class="problem__link">Не работает кнопка включения</a>
+                </li>
+                <li class="problem__item"><a href="" class="problem__link">Не выключается</a></li>
+                <li class="problem__item"><a href="" class="problem__link">Иная проблема</a></li>
+                <li class="problem__item">
+                  <a href="" class="problem__link">Не крутится барабан</a>
+                </li>
+                <li class="problem__item">
+                  <a href="" class="problem__link">Не крутится барабан</a>
+                </li>
+                <li class="problem__item">
+                  <a href="" class="problem__link">Не работает кнопка включения</a>
+                </li>
+              </ul>
+              <p class="problem__text">Выберите проблему и узнайте её решение</p>
+            </div>
+            <div class="problem__decor">
+              <img src="img/problem/decor.png" alt="" />
+            </div>
+            <div class="problem__washmachine" data-da=".problem__left,1000.99,2">
+              <img src="img/problem/washmachine.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="price">
+          <div class="price__container">
+            <h2 class="price__title">Стоимость работ</h2>
+            <table class="price__table">
+              <tr class="price__tableRow">
+                <td class="price__tableText">Услуга</td>
+                <td class="price__tableText price__tableText--right">Стоимость запчасти</td>
+                <td class="price__tableText price__tableText--right">Стоимость работ</td>
+              </tr>
+              <tr class="price__tableRow">
+                <td class="price__tableText">Выезд мастера</td>
+                <td class="price__tableText price__tableText--right"></td>
+                <td class="price__tableText price__tableText--right price__tableText--free">
+                  Бесплатно
+                </td>
+              </tr>
+              <tr class="price__tableRow">
+                <td class="price__tableText">Диагностика стиральной машины</td>
+                <td class="price__tableText price__tableText--right"></td>
+                <td class="price__tableText price__tableText--right price__tableText--free">
+                  Бесплатно
+                </td>
+              </tr>
+              <tr class="price__tableRow">
+                <td class="price__tableText">Замена блока питания</td>
+                <td class="price__tableText price__tableText--right price__tableText--price">
+                  от 750₽
+                </td>
+                <td class="price__tableText price__tableText--right price__tableText--price">
+                  900₽
+                </td>
+              </tr>
+              <tr class="price__tableRow">
+                <td class="price__tableText">Замена помпы</td>
+                <td class="price__tableText price__tableText--right price__tableText--price">
+                  от 8880₽
+                </td>
+                <td class="price__tableText price__tableText--right price__tableText--price">
+                  1900₽
+                </td>
+              </tr>
+              <tr class="price__tableRow">
+                <td class="price__tableText">Замена подшипников</td>
+                <td class="price__tableText price__tableText--right price__tableText--price">
+                  от 1450₽
+                </td>
+                <td class="price__tableText price__tableText--right price__tableText--price">
+                  750₽
+                </td>
+              </tr>
+            </table>
+            <a href="" class="price__link">Показать все цены</a>
+          </div>
+        </section>
+        <section class="team">
+          <div class="team__container">
+            <h4 class="team__subtitle">В нашем штате 37 сотрудников</h4>
+            <h2 class="team__title">Мы большая команда профессионалов</h2>
+            <div class="team__slider swiper">
+              <div class="team__wrapper swiper-wrapper">
+                <div class="team-slide swiper-slide">
+                  <div class="team-slide__inner">
+                    <div class="team-slide__img"><img src="img/team/1.jpg" alt="" /></div>
+                    <div class="team-slide__info team-info">
+                      <p class="team-info__name">Александр Федулов</p>
+                      <p class="team-info__job">Ремонтник</p>
+                      <ul class="team-info__list">
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide swiper-slide">
+                  <div class="team-slide__inner">
+                    <div class="team-slide__img"><img src="img/team/1.jpg" alt="" /></div>
+                    <div class="team-slide__info team-info">
+                      <p class="team-info__name">Александр Федулов</p>
+                      <p class="team-info__job">Ремонтник</p>
+                      <ul class="team-info__list">
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide swiper-slide">
+                  <div class="team-slide__inner">
+                    <div class="team-slide__img"><img src="img/team/1.jpg" alt="" /></div>
+                    <div class="team-slide__info team-info">
+                      <p class="team-info__name">Александр Федулов</p>
+                      <p class="team-info__job">Ремонтник</p>
+                      <ul class="team-info__list">
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide swiper-slide">
+                  <div class="team-slide__inner">
+                    <div class="team-slide__img"><img src="img/team/1.jpg" alt="" /></div>
+                    <div class="team-slide__info team-info">
+                      <p class="team-info__name">Александр Федулов</p>
+                      <p class="team-info__job">Ремонтник</p>
+                      <ul class="team-info__list">
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                        <li class="team-info__item">
+                          <p class="team-info__link">398 ремонтных работ</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team__pagination">
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="team__navigation">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__container">
+            <h2 class="reviews__title">Нас высоко оценивают</h2>
+            <div class="reviews__slider swiper">
+              <div class="reviews__wrapper swiper-wrapper">
+                <div class="reviews-slide swiper-slide">
+                  <div class="reviews-slide__user reviews-user">
+                    <div class="reviews-user__img"><img src="img/reviews/1.jpg" alt="" /></div>
+                    <div class="reviews-user__info">
+                      <p class="reviews-user__name">Владимир Завертайлов</p>
+                      <p class="reviews-user__date">15 марта 2021</p>
+                    </div>
+                  </div>
+                  <div class="reviews-user__text">
+                    <p>
+                      Знаю AXIS, как опытных экспертов в области создания визуализаций любой
+                      сложности. Умеют четко, грамотно и по делу формулировать мысли. Исследовать
+                      вопросы. Капают — глубоко. В 3D визуализации стремятся не заработать на
+                      клиенте, а решить проблемы и предподнести проект в выгодном свете!
+                    </p>
+                  </div>
+                </div>
+                <div class="reviews-slide swiper-slide">
+                  <div class="reviews-slide__user reviews-user">
+                    <div class="reviews-user__img"><img src="img/reviews/1.jpg" alt="" /></div>
+                    <div class="reviews-user__info">
+                      <p class="reviews-user__name">Владимир Завертайлов</p>
+                      <p class="reviews-user__date">15 марта 2021</p>
+                    </div>
+                  </div>
+                  <div class="reviews-user__text">
+                    <p>
+                      Знаю AXIS, как опытных экспертов в области создания визуализаций любой
+                      сложности. Умеют четко, грамотно и по делу формулировать мысли. Исследовать
+                      вопросы. Капают — глубоко. В 3D визуализации стремятся не заработать на
+                      клиенте, а решить проблемы и предподнести проект в выгодном свете!
+                    </p>
+                  </div>
+                </div>
+                <div class="reviews-slide swiper-slide">
+                  <div class="reviews-slide__user reviews-user">
+                    <div class="reviews-user__img"><img src="img/reviews/1.jpg" alt="" /></div>
+                    <div class="reviews-user__info">
+                      <p class="reviews-user__name">Владимир Завертайлов</p>
+                      <p class="reviews-user__date">15 марта 2021</p>
+                    </div>
+                  </div>
+                  <div class="reviews-user__text">
+                    <p>
+                      Знаю AXIS, как опытных экспертов в области создания визуализаций любой
+                      сложности. Умеют четко, грамотно и по делу формулировать мысли. Исследовать
+                      вопросы. Капают — глубоко. В 3D визуализации стремятся не заработать на
+                      клиенте, а решить проблемы и предподнести проект в выгодном свете!
+                    </p>
+                  </div>
+                </div>
+                <div class="reviews-slide swiper-slide">
+                  <div class="reviews-slide__user reviews-user">
+                    <div class="reviews-user__img"><img src="img/reviews/1.jpg" alt="" /></div>
+                    <div class="reviews-user__info">
+                      <p class="reviews-user__name">Владимир Завертайлов</p>
+                      <p class="reviews-user__date">15 марта 2021</p>
+                    </div>
+                  </div>
+                  <div class="reviews-user__text">
+                    <p>
+                      Знаю AXIS, как опытных экспертов в области создания визуализаций любой
+                      сложности. Умеют четко, грамотно и по делу формулировать мысли. Исследовать
+                      вопросы. Капают — глубоко. В 3D визуализации стремятся не заработать на
+                      клиенте, а решить проблемы и предподнести проект в выгодном свете!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__pagination">
+              <div class="swiper-pagination-2"></div>
+            </div>
+            <div class="reviews__navigation">
+              <div class="swiper-button-prev-2"></div>
+              <div class="swiper-button-next-2"></div>
+            </div>
+          </div>
+        </section>
+        <section class="evaluation">
+          <div class="evaluation__container">
+            <div class="evaluation__item">
+              <div class="evaluation__left">
+                <div class="evaluation__num">4,5 <span>/ 5.0</span></div>
+                <p class="evaluation__text">100+ оценок</p>
+              </div>
+              <div class="evaluation__logo">
+                <img src="img/evaluation/1.svg" alt="" />
+              </div>
+            </div>
+            <div class="evaluation__item">
+              <div class="evaluation__left">
+                <div class="evaluation__num">4,5 <span>/ 5.0</span></div>
+                <p class="evaluation__text">100+ оценок</p>
+              </div>
+              <div class="evaluation__logo">
+                <img src="img/evaluation/1.svg" alt="" />
+              </div>
+            </div>
+            <div class="evaluation__item">
+              <div class="evaluation__left">
+                <div class="evaluation__num">4,5 <span>/ 5.0</span></div>
+                <p class="evaluation__text">100+ оценок</p>
+              </div>
+              <div class="evaluation__logo">
+                <img src="img/evaluation/1.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="questions__container">
+            <div class="questions__left questions-left">
+              <h2 class="questions-left__title">Часто задаваемые вопросы</h2>
+              <div class="questions-left__text">
+                <p>
+                  Не нашли ответ на свой вопрос? <a href="">Оставьте заявку</a> и наш специалист
+                  свяжется и ответит на ваш вопрос
+                </p>
+              </div>
+            </div>
+            <div class="questions__spollers questions-spollers">
+              <div class="questions-spollers__item">
+                <div class="questions-spollers__plus">
+                  <img src="img/icons/plus.svg" alt="" />
+                </div>
+                <button class="questions-spollers__button">Где почитать отзывы о вас?</button>
+                <div class="questions-spollers__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi
+                    facilis magni vel libero temporibus eius fugit voluptatibus nesciunt, optio aut
+                    asperiores commodi similique voluptatem tempore, est natus molestiae neque?
+                  </p>
+                </div>
+              </div>
+              <div class="questions-spollers__item">
+                <div class="questions-spollers__plus">
+                  <img src="img/icons/plus.svg" alt="" />
+                </div>
+                <button class="questions-spollers__button">Сколько времени длится ремонт?</button>
+                <div class="questions-spollers__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi
+                    facilis magni vel libero temporibus eius fugit voluptatibus nesciunt, optio aut
+                    asperiores commodi similique voluptatem tempore, est natus molestiae neque?
+                  </p>
+                </div>
+              </div>
+              <div class="questions-spollers__item">
+                <div class="questions-spollers__plus">
+                  <img src="img/icons/plus.svg" alt="" />
+                </div>
+                <button class="questions-spollers__button">
+                  Какие марки стиральных машин вы ремонтируете?
+                </button>
+                <div class="questions-spollers__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi
+                    facilis magni vel libero temporibus eius fugit voluptatibus nesciunt, optio aut
+                    asperiores commodi similique voluptatem tempore, est natus molestiae neque?
+                  </p>
+                </div>
+              </div>
+              <div class="questions-spollers__item">
+                <div class="questions-spollers__plus">
+                  <img src="img/icons/plus.svg" alt="" />
+                </div>
+                <button class="questions-spollers__button">
+                  Я живу в московской области, сможете приехать?
+                </button>
+                <div class="questions-spollers__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi
+                    facilis magni vel libero temporibus eius fugit voluptatibus nesciunt, optio aut
+                    asperiores commodi similique voluptatem tempore, est natus molestiae neque?
+                  </p>
+                </div>
+              </div>
+              <div class="questions-spollers__item">
+                <div class="questions-spollers__plus">
+                  <img src="img/icons/plus.svg" alt="" />
+                </div>
+                <button class="questions-spollers__button">
+                  Как производится контроль качества?
+                </button>
+                <div class="questions-spollers__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi
+                    facilis magni vel libero temporibus eius fugit voluptatibus nesciunt, optio aut
+                    asperiores commodi similique voluptatem tempore, est natus molestiae neque?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="call">
+          <div class="call__container">
+            <div class="call__left">
+              <h2 class="call__title">Вызов мастера</h2>
+              <div class="call__text">
+                <p>Оставьте заявку сейчас и получите <span>скидку 15%</span></p>
+              </div>
+            </div>
+            <form action="" class="call__form">
+              <input type="text" class="call__input" placeholder="Номер телефона" />
+              <button class="call__button" type="submit">Заказать звонок</button>
+            </form>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact__container">
+            <div class="contact__map" id="map" data-da=".contact__info, 1000.99,1"></div>
+            <div class="contact__info">
+              <h2 class="contact__title">Контактная информация</h2>
+              <div class="contact__grid">
+                <div class="contact__item contact-item">
+                  <p class="contact-item__text">ул. Стрелковая, д. 14 (офис 1)</p>
+                  <p class="contact-item__workTime">8:00—21:00 без выходных</p>
+                </div>
+                <div class="contact__item contact-item">
+                  <p class="contact-item__text">ул. Стрелковая, д. 14 (офис 1)</p>
+                  <p class="contact-item__workTime">8:00—21:00 без выходных</p>
+                </div>
+                <a href="" class="contact__email">iavaisov@gmail.com</a>
+                <a href="" class="contact__link">Позвонить</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="" class="footer__logo"><img src="img/icons/logo-b.svg" alt="" /></a>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="" class="footer__link">Диагностика</a></li>
+            <li class="footer__item"><a href="" class="footer__link">Стоимость</a></li>
+            <li class="footer__item"><a href="" class="footer__link">Мастера</a></li>
+            <li class="footer__item"><a href="" class="footer__link">Отзывы</a></li>
+            <li class="footer__item"><a href="" class="footer__link">Вопросы</a></li>
+            <li class="footer__item"><a href="" class="footer__link">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="footer__pay footer-pay">
+          <p class="footer-pay__text">Способы оплаты:</p>
+          <ul class="footer-pay__list">
+            <li class="footer-pay__item">
+              <a href="" class="footer-pay__link"><img src="img/footer/1.svg" alt="" /></a>
+            </li>
+            <li class="footer-pay__item">
+              <a href="" class="footer-pay__link"><img src="img/footer/2.svg" alt="" /></a>
+            </li>
+            <li class="footer-pay__item">
+              <a href="" class="footer-pay__link"><img src="img/footer/3.svg" alt="" /></a>
+            </li>
+            <li class="footer-pay__item">
+              <a href="" class="footer-pay__link"><img src="img/footer/4.svg" alt="" /></a>
+            </li>
+            <li class="footer-pay__item">
+              <a href="" class="footer-pay__link"><img src="img/footer/5.svg" alt="" /></a>
+            </li>
+            <li class="footer-pay__item">
+              <a href="" class="footer-pay__link"><img src="img/footer/6.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <div class="footer__bot footer-bot">
+            <p class="footer-bot__text">Сервис ремонта бытовой и цифровой техники</p>
+            <p class="footer-bot__text">ЧПТУП «МИКАИЛ» 192007601</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
+<!-- fix double padding in sections -->
